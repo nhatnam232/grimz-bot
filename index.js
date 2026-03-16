@@ -1,6 +1,6 @@
 const { Client, GatewayIntentBits, REST, Routes, SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits, ActionRowBuilder, ButtonBuilder, ButtonStyle, ChannelType } = require('discord.js');
 
-const TOKEN   = process.env.BOT_TOKEN || 'MTQ4Mjk5NzQ1NjI5NDc3MjczNw.GJ74zs.2X9lyh6A5fzvJiNUJmmwTG8LB5KC1AbIJgcLio';
+const TOKEN   = process.env.BOT_TOKEN;
 const CLIENT_ID = '1482997456294772737';
 const GUILD_ID  = '1465410265704300567';
 const SUPABASE_URL = 'https://vlwevojqfomophsdwsqd.supabase.co';
