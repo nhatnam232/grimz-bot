@@ -1,0 +1,16 @@
+{
+  "name": "grimz-bot",
+  "version": "1.0.0",
+  "description": "Grimz Cloud PC Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
