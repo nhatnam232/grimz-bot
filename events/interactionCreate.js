@@ -1,6 +1,6 @@
 const logger = require('../utils/logger');
 const ticket = require('../commands/ticket');
-const { buildPriceEmbed, buildPlansEmbed, buildConnectEmbed, buildOrderEmbed, buildFaqEmbed, buildStatusEmbed } = require('../utils/embeds');
+const { buildPriceEmbed, buildPlansEmbed, buildConnectEmbed, buildOrderEmbed, buildFaqEmbed, buildStatusEmbed, buildBannedGamesEmbed } = require('../utils/embeds');
 const { createLangButtons } = require('../utils/buttons');
 const { t } = require('../utils/i18n');
 const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
@@ -14,6 +14,7 @@ const embedBuilders = {
   connect: buildConnectEmbed,
   order: buildOrderEmbed,
   faq: buildFaqEmbed,
+  bannedgames: buildBannedGamesEmbed,
 };
 
 // Rebuild moderation embeds from existing embed data
