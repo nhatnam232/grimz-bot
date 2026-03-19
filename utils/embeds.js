@@ -97,6 +97,21 @@ function buildStatusEmbed(lang = 'vi', { webResult, dbResult, uptimeStr }) {
     .setTimestamp();
 }
 
+function buildRulesEmbed(lang = 'vi') {
+  const l = t('rules', lang);
+  return new EmbedBuilder()
+    .setTitle(l.title)
+    .setColor(0x7c5cbf)
+    .setDescription(l.description)
+    .addFields(
+      { name: l.discord.name, value: l.discord.value },
+      { name: l.vm.name, value: l.vm.value },
+      { name: l.warning.name, value: l.warning.value },
+    )
+    .setFooter({ text: l.footer })
+    .setTimestamp();
+}
+
 function buildBannedGamesEmbed(lang = 'vi') {
   const l = t('bannedgames', lang);
   return new EmbedBuilder()
@@ -112,4 +127,4 @@ function buildBannedGamesEmbed(lang = 'vi') {
     .setTimestamp();
 }
 
-module.exports = { buildPriceEmbed, buildPlansEmbed, buildConnectEmbed, buildOrderEmbed, buildFaqEmbed, buildStatusEmbed, buildBannedGamesEmbed };
+module.exports = { buildPriceEmbed, buildPlansEmbed, buildConnectEmbed, buildOrderEmbed, buildFaqEmbed, buildStatusEmbed, buildRulesEmbed, buildBannedGamesEmbed };

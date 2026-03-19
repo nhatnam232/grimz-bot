@@ -215,6 +215,79 @@ const translations = {
     },
   },
 
+  rules: {
+    vi: {
+      title: '📜 Nội Quy · Grimz Cloud PC',
+      description: 'Vui lòng đọc kỹ và tuân thủ các quy định sau. Vi phạm có thể dẫn đến **cấm dịch vụ vĩnh viễn**.',
+      discord: {
+        name: '💬 Nội Quy Discord',
+        value: [
+          '`1.` 🚫 Không spam, flood, mention vô lý',
+          '`2.` 🤬 Không toxic, chửi bới, phân biệt đối xử',
+          '`3.` 📢 Không quảng cáo server/dịch vụ khác',
+          '`4.` 🔞 Không share nội dung 18+, bạo lực',
+          '`5.` 👤 Không giả mạo staff/admin',
+          '`6.` 🎫 Không DM staff — dùng **ticket** để được hỗ trợ',
+          '`7.` 🔒 Không chia sẻ thông tin cá nhân người khác',
+          '`8.` ✅ Dùng đúng kênh đúng mục đích',
+        ].join('\n'),
+      },
+      vm: {
+        name: '🖥️ Nội Quy Cloud PC',
+        value: [
+          '`1.` ⛔ **TUYỆT ĐỐI** không Shutdown/Restart máy — liên hệ staff nếu cần',
+          '`2.` ⏰ Gia hạn **trước 10 phút** khi sắp hết giờ — hết giờ máy bị thu hồi ngay',
+          '`3.` 🎮 Không dùng để hack/cheat game',
+          '`4.` ⛏️ Không mine crypto/farm tiền ảo',
+          '`5.` 🌐 Không host server lậu hoặc tấn công DDoS',
+          '`6.` 🔐 Không chia sẻ IP/mật khẩu máy cho người khác',
+          '`7.` 🦠 Không cài malware, virus, tool crack',
+          '`8.` 💾 Backup data trước khi hết hạn — Grimz không chịu trách nhiệm mất data',
+        ].join('\n'),
+      },
+      warning: {
+        name: '⚠️ Lưu Ý Quan Trọng',
+        value: 'Vi phạm nội quy sẽ bị **xử lý ngay lập tức** mà không cần cảnh báo trước.\nGrimz Team có quyền **thu hồi máy & ban tài khoản** vĩnh viễn.',
+      },
+      footer: 'Grimz Cloud PC · Bằng cách sử dụng dịch vụ, bạn đồng ý với các quy định trên',
+    },
+    en: {
+      title: '📜 Rules · Grimz Cloud PC',
+      description: 'Please read carefully and follow all rules below. Violations may result in **permanent service ban**.',
+      discord: {
+        name: '💬 Discord Rules',
+        value: [
+          '`1.` 🚫 No spam, flooding, or unnecessary mentions',
+          '`2.` 🤬 No toxic behavior, insults, or discrimination',
+          '`3.` 📢 No advertising other servers or services',
+          '`4.` 🔞 No 18+ or violent content',
+          '`5.` 👤 Do not impersonate staff or admins',
+          '`6.` 🎫 Do not DM staff — use a **ticket** for support',
+          '`7.` 🔒 Do not share others\' personal information',
+          '`8.` ✅ Use channels for their intended purpose only',
+        ].join('\n'),
+      },
+      vm: {
+        name: '🖥️ Cloud PC Rules',
+        value: [
+          '`1.` ⛔ **NEVER** Shutdown/Restart the machine — contact staff if needed',
+          '`2.` ⏰ Extend **at least 10 minutes** before expiry — machine is reclaimed immediately after',
+          '`3.` 🎮 No hacking or cheating in games',
+          '`4.` ⛏️ No crypto mining or coin farming',
+          '`5.` 🌐 No hosting illegal servers or DDoS attacks',
+          '`6.` 🔐 Do not share machine IP or password with others',
+          '`7.` 🦠 No installing malware, viruses, or crack tools',
+          '`8.` 💾 Backup your data before expiry — Grimz is not responsible for data loss',
+        ].join('\n'),
+      },
+      warning: {
+        name: '⚠️ Important Notice',
+        value: 'Rule violations will be **handled immediately** without prior warning.\nGrimz Team reserves the right to **revoke machines & permanently ban accounts**.',
+      },
+      footer: 'Grimz Cloud PC · By using our service, you agree to the above rules',
+    },
+  },
+
   bannedgames: {
     vi: {
       title: '🚫 Game Không Hỗ Trợ · Grimz Cloud PC',
