@@ -42,6 +42,7 @@ function buildConnectEmbed(lang = 'vi') {
       { name: l.step1.name, value: l.step1.value },
       { name: l.step2.name, value: l.step2.value },
       { name: l.step3.name, value: l.step3.value },
+      { name: l.step4.name, value: l.step4.value },
       { name: l.settings.name, value: l.settings.value },
     )
     .setFooter({ text: l.footer })
@@ -75,6 +76,8 @@ function buildFaqEmbed(lang = 'vi') {
       { name: l.q4.name, value: l.q4.value },
       { name: l.q5.name, value: l.q5.value },
       { name: l.q6.name, value: l.q6.value },
+      { name: l.q7.name, value: l.q7.value },
+      { name: l.q8.name, value: l.q8.value },
     )
     .setFooter({ text: l.footer })
     .setTimestamp();

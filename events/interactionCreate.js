@@ -50,8 +50,18 @@ module.exports = {
     // Handle buttons
     if (interaction.isButton()) {
       try {
+        // Ticket buttons
         if (interaction.customId === 'create_ticket') return await ticket.handleCreate(interaction);
-        if (interaction.customId === 'close_ticket') return await ticket.handleClose(interaction);
+        if (interaction.customId === 'close_ticket') return await ticket.handleCloseConfirm(interaction);
+        if (interaction.customId === 'confirm_close_ticket') return await ticket.handleCloseExecute(interaction);
+        if (interaction.customId === 'cancel_close_ticket') return await ticket.handleCloseCancel(interaction);
+        if (interaction.customId === 'claim_ticket') return await ticket.handleClaim(interaction);
+
+        // Thongbao read button
+        if (interaction.customId === 'thongbao_read') {
+          const l = t('thongbao', 'vi');
+          return await interaction.reply({ content: l.readConfirm, ephemeral: true });
+        }
 
         // Language switch buttons
         const langMatch = interaction.customId.match(/^lang_(vi|en)_(.+)$/);
@@ -86,7 +96,6 @@ module.exports = {
             const originalEmbed = interaction.message.embeds[0];
             const embed = rebuildTicketEmbed(lang, originalEmbed);
             const l = t('ticket', lang);
-            // Preserve the create_ticket button row and update lang buttons
             const ticketRow = new ActionRowBuilder().addComponents(
               new ButtonBuilder().setCustomId('create_ticket').setLabel(l.createBtn).setStyle(ButtonStyle.Primary)
             );
