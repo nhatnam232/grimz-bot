@@ -216,6 +216,44 @@ const translations = {
   },
 };
 
+  bannedgames: {
+    vi: {
+      title: '🚫 Game Không Hỗ Trợ · Grimz Cloud PC',
+      description: 'Các game sau **không chạy được** hoặc **không ổn định** trên máy ảo do anti-cheat kiểm tra môi trường VM.',
+      blocked: {
+        name: '🔴 Không Chạy Được',
+        value: '**Riot Vanguard:** Valorant, League of Legends, TFT, 2XKO\n**EA Anti-Cheat:** Battlefield 1/V/2042/6, FC 24/25/26, F1 2024, Madden NFL 25\n**EasyAntiCheat:** Fortnite, Rust, Dead by Daylight, Fall Guys, Arc Raiders, Arena Breakout, The Finals, XDefiant\n**BattlEye:** PUBG, Grey Zone Warfare\n**Kernel-level:** COD: Black Ops 7, Star Citizen, Strinova',
+      },
+      unstable: {
+        name: '🟡 Không Ổn Định',
+        value: 'Genshin Impact, Marvel Rivals, VRChat, 7 Days to Die',
+      },
+      works: {
+        name: '✅ Chạy Tốt',
+        value: 'CS2, Dota 2, Apex Legends, Rainbow Six Siege, GTA V, Cyberpunk 2077, Elden Ring, và hầu hết game single-player',
+      },
+      footer: 'Grimz Cloud PC · Cập nhật theo Shadow PC & cộng đồng',
+    },
+    en: {
+      title: '🚫 Unsupported Games · Grimz Cloud PC',
+      description: 'The following games **cannot run** or are **unstable** on virtual machines due to anti-cheat detecting VM environments.',
+      blocked: {
+        name: '🔴 Does Not Work',
+        value: '**Riot Vanguard:** Valorant, League of Legends, TFT, 2XKO\n**EA Anti-Cheat:** Battlefield 1/V/2042/6, FC 24/25/26, F1 2024, Madden NFL 25\n**EasyAntiCheat:** Fortnite, Rust, Dead by Daylight, Fall Guys, Arc Raiders, Arena Breakout, The Finals, XDefiant\n**BattlEye:** PUBG, Grey Zone Warfare\n**Kernel-level:** COD: Black Ops 7, Star Citizen, Strinova',
+      },
+      unstable: {
+        name: '🟡 Unstable',
+        value: 'Genshin Impact, Marvel Rivals, VRChat, 7 Days to Die',
+      },
+      works: {
+        name: '✅ Works Great',
+        value: 'CS2, Dota 2, Apex Legends, Rainbow Six Siege, GTA V, Cyberpunk 2077, Elden Ring, and most single-player games',
+      },
+      footer: 'Grimz Cloud PC · Updated via Shadow PC & community',
+    },
+  },
+};
+
 function t(command, lang = 'vi') {
   return translations[command]?.[lang] || translations[command]?.vi || {};
 }

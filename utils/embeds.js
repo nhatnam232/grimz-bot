@@ -97,4 +97,19 @@ function buildStatusEmbed(lang = 'vi', { webResult, dbResult, uptimeStr }) {
     .setTimestamp();
 }
 
-module.exports = { buildPriceEmbed, buildPlansEmbed, buildConnectEmbed, buildOrderEmbed, buildFaqEmbed, buildStatusEmbed };
+function buildBannedGamesEmbed(lang = 'vi') {
+  const l = t('bannedgames', lang);
+  return new EmbedBuilder()
+    .setTitle(l.title)
+    .setColor(0xf87171)
+    .setDescription(l.description)
+    .addFields(
+      { name: l.blocked.name, value: l.blocked.value },
+      { name: l.unstable.name, value: l.unstable.value },
+      { name: l.works.name, value: l.works.value },
+    )
+    .setFooter({ text: l.footer })
+    .setTimestamp();
+}
+
+module.exports = { buildPriceEmbed, buildPlansEmbed, buildConnectEmbed, buildOrderEmbed, buildFaqEmbed, buildStatusEmbed, buildBannedGamesEmbed };
