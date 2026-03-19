@@ -214,7 +214,6 @@ const translations = {
       footerBy: (admin) => `Grimz Cloud PC · Notification by ${admin}`,
     },
   },
-};
 
   bannedgames: {
     vi: {
