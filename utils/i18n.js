@@ -3,8 +3,8 @@ const translations = {
     vi: {
       title: '💰 Bảng Giá · Grimz Cloud PC',
       description: 'Tính tiền theo **giờ thực tế** · Không cần đặt cọc · Thanh toán qua chuyển khoản hoặc MoMo',
-      nova: { name: '⚡ G-NOVA · RTX 3060 12GB', value: '> 🇻🇳 **3.000đ/giờ**\n> 🇬🇧 **$0.35/hr**\n> 🎮 Phù hợp: Valorant, CSGO, GTA V, Genshin Impact, LOL' },
-      orbit: { name: '🚀 G-ORBIT · RTX 4060 8GB', value: '> 🇻🇳 **5.000đ/giờ**\n> 🇬🇧 **$0.50/hr**\n> 🎮 Phù hợp: Cyberpunk 2077, Hogwarts Legacy, Forza Horizon 5' },
+      nova: { name: '⚡ G-NOVA · RTX 3060 12GB', value: '> 🇻🇳 **3.000đ/giờ**\n> 🇬🇧 **$0.50/hr**\n> 🎮 Phù hợp: Valorant, CSGO, GTA V, Genshin Impact, LOL' },
+      orbit: { name: '🚀 G-ORBIT · RTX 4060 8GB', value: '> 🇻🇳 **5.000đ/giờ**\n> 🇬🇧 **$0.60/hr**\n> 🎮 Phù hợp: Cyberpunk 2077, Hogwarts Legacy, Forza Horizon 5' },
       pulsar: { name: '🌟 G-PULSAR · RTX 4070', value: '> 🇻🇳 **6.000đ/giờ**\n> 🇬🇧 **$0.70/hr**\n> 🎮 Phù hợp: 4K Gaming, Streaming, Video Editing, AI/ML Workloads' },
       note: { name: '📌 Ghi chú', value: '• Gói ngày/tuần: **Liên hệ staff**\n• Ping Singapore < 30ms\n• Hỗ trợ 24/7 qua Discord ticket\n• 💵 Giá USD dành cho khách quốc tế, thanh toán qua **PayPal / Wise**' },
       footer: 'Grimz Cloud PC · grimz.vercel.app/cloud',
@@ -12,8 +12,8 @@ const translations = {
     en: {
       title: '💰 Pricing · Grimz Cloud PC',
       description: 'Pay by **actual hours** · No deposit required · Pay via bank transfer or MoMo',
-      nova: { name: '⚡ G-NOVA · RTX 3060 12GB', value: '> 🇻🇳 **3,000đ/hr**\n> 🇬🇧 **$0.35/hr**\n> 🎮 Best for: Valorant, CSGO, GTA V, Genshin Impact, LOL' },
-      orbit: { name: '🚀 G-ORBIT · RTX 4060 8GB', value: '> 🇻🇳 **5,000đ/hr**\n> 🇬🇧 **$0.50/hr**\n> 🎮 Best for: Cyberpunk 2077, Hogwarts Legacy, Forza Horizon 5' },
+      nova: { name: '⚡ G-NOVA · RTX 3060 12GB', value: '> 🇻🇳 **3,000đ/hr**\n> 🇬🇧 **$0.50/hr**\n> 🎮 Best for: Valorant, CSGO, GTA V, Genshin Impact, LOL' },
+      orbit: { name: '🚀 G-ORBIT · RTX 4060 8GB', value: '> 🇻🇳 **5,000đ/hr**\n> 🇬🇧 **$0.60/hr**\n> 🎮 Best for: Cyberpunk 2077, Hogwarts Legacy, Forza Horizon 5' },
       pulsar: { name: '🌟 G-PULSAR · RTX 4070', value: '> 🇻🇳 **6,000đ/hr**\n> 🇬🇧 **$0.70/hr**\n> 🎮 Best for: 4K Gaming, Streaming, Video Editing, AI/ML Workloads' },
       note: { name: '📌 Note', value: '• Daily/weekly packages: **Contact staff**\n• Singapore ping < 30ms\n• 24/7 support via Discord ticket\n• 💵 USD pricing for international customers, pay via **PayPal / Wise**' },
       footer: 'Grimz Cloud PC · grimz.vercel.app/cloud',
@@ -30,8 +30,8 @@ const translations = {
     },
     en: {
       title: '🖥️ Service Plans · Grimz Cloud PC',
-      nova: { name: '╔═ PLAN 1 · G-NOVA ═╗', value: '```\nCPU     : Intel Core i5-10400F\nGPU     : RTX 3060 12GB\nRAM     : 32GB DDR4\nStorage : 2 x 1TB HDD\nOS      : Windows 10/11\nPrice   : 3,000đ/hr ($0.35)\n```' },
-      orbit: { name: '╔═ PLAN 2 · G-ORBIT ═╗', value: '```\nCPU     : Intel Core i5-10400F\nGPU     : RTX 4060 8GB\nRAM     : 32GB DDR4\nStorage : 2 x 1TB HDD\nOS      : Windows 10/11\nPrice   : 5,000đ/hr ($0.50)\n```' },
+      nova: { name: '╔═ PLAN 1 · G-NOVA ═╗', value: '```\nCPU     : Intel Core i5-10400F\nGPU     : RTX 3060 12GB\nRAM     : 32GB DDR4\nStorage : 2 x 1TB HDD\nOS      : Windows 10/11\nPrice   : 3,000đ/hr ($0.50)\n```' },
+      orbit: { name: '╔═ PLAN 2 · G-ORBIT ═╗', value: '```\nCPU     : Intel Core i5-10400F\nGPU     : RTX 4060 8GB\nRAM     : 32GB DDR4\nStorage : 2 x 1TB HDD\nOS      : Windows 10/11\nPrice   : 5,000đ/hr ($0.60)\n```' },
       pulsar: { name: '╔═ PLAN 3 · G-PULSAR ═╗', value: '```\nCPU     : Intel Core i7\nGPU     : RTX 4070\nRAM     : 32GB DDR4\nStorage : 2TB SSD NVMe + 2TB HDD\nOS      : Windows 10/11\nPrice   : 6,000đ/hr ($0.70)\n```' },
       footer: 'Grimz Cloud PC · All plans have Singapore Ping < 30ms',
     },
